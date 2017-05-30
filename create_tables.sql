@@ -28,3 +28,8 @@ CREATE TABLE `tracks` (
   KEY `parent` (`parent`)
 ) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=utf16;
 
+CREATE TABLE `devices` (
+  `alsa_name` varchar(64) NOT NULL,
+  `friendly_name` varchar(64) NOT NULL,
+  PRIMARY KEY (`alsa_name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf16;
